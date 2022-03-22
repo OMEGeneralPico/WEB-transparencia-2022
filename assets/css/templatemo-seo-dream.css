@@ -1643,6 +1643,37 @@ footer p a:hover {
 
 /* 
 ---------------------------------------------
+Grid introduccion
+--------------------------------------------- 
+*/
+.grid-fotos{
+  display:grid;
+  align-items: stretch;
+  grid-template-columns: 20% 20% 20% ;
+  grid-template-rows: 65% 20% 20%;
+  max-width: 1200px;
+}
+
+.intendenta{
+  grid-column:1/4;
+}
+
+.resto{
+  overflow: hidden;
+  margin-left: 0.5em;
+}
+
+
+.foto_intendenta, .foto_resto{ filter: grayscale(100%); 
+  transition: filter .3s ease-in-out;
+  height: auto;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+.foto_intendenta:hover, .foto_resto:hover { filter: none;}
+/* 
+---------------------------------------------
 responsive
 --------------------------------------------- 
 */
