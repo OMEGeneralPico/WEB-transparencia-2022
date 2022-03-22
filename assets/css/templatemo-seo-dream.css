@@ -1287,6 +1287,19 @@ Due to the split circle of progress-left and progress right, we must use the ani
 About Us Style
 --------------------------------------------- 
 */
+.citas{
+  font-weight: 700;
+
+  font-family: 'Titillium Web' !important;
+  text-align: left;
+
+}
+/* primera letra mayuscula en slide */
+.first-letter {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 900;
+}
 
 #about {
   padding-top: 130px;
@@ -1344,12 +1357,17 @@ Services Style
   border-radius: 5px;
   transition: all .3s;
   margin-bottom: 30px;
+  min-height: 400px;
+  min-width: 300px;
 }
+
 
 .service-item:hover {
   background-color: #fff;
   border: 2px solid transparent;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+ min-height: 250px;
+  min-width: 300px;
 }
 
 .service-item .icon {
