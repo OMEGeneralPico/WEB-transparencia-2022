@@ -1667,7 +1667,7 @@ Grid introduccion
 .foto_intendenta, .foto_resto{ filter: grayscale(100%); 
   transition: filter .3s ease-in-out;
   height: auto;
-  max-width: 100%;
+  
   margin: auto;
   display: block;
 }
