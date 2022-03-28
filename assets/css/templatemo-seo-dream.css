@@ -1111,7 +1111,7 @@ Features Style
   border-style: solid;
   position: absolute;
   top: 0;
-  border-color: #fd6a54;
+  border-color: #00A27F;
 }
 .progress .progress-left .progress-bar {
   left: 100%;
@@ -1157,6 +1157,18 @@ Features Style
 /* This for loop creates the  necessary css animation names 
 Due to the split circle of progress-left and progress right, we must use the animations on each side. 
 */
+.progress[data-percentage="3"] .progress-right .progress-bar {
+  animation: loading-1 1.5s linear forwards;
+}
+.progress[data-percentage="3"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="5"] .progress-right .progress-bar {
+  animation: loading-1 1.5s linear forwards;
+}
+.progress[data-percentage="5"] .progress-left .progress-bar {
+  animation: 0;
+}
 .progress[data-percentage="10"] .progress-right .progress-bar {
   animation: loading-1 1.5s linear forwards;
 }
@@ -1168,6 +1180,12 @@ Due to the split circle of progress-left and progress right, we must use the ani
   animation: loading-2 1.5s linear forwards;
 }
 .progress[data-percentage="20"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="26"] .progress-right .progress-bar {
+  animation: loading-2 1.5s linear forwards;
+}
+.progress[data-percentage="26"] .progress-left .progress-bar {
   animation: 0;
 }
 
@@ -1198,7 +1216,12 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .progress[data-percentage="60"] .progress-left .progress-bar {
   animation: loading-1 1.5s linear forwards 1.5s;
 }
-
+.progress[data-percentage="65"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage="65"] .progress-left .progress-bar {
+  animation: loading-1 1.5s linear forwards 1.5s;
+}
 .progress[data-percentage="70"] .progress-right .progress-bar {
   animation: loading-5 1.5s linear forwards;
 }
@@ -1287,6 +1310,19 @@ Due to the split circle of progress-left and progress right, we must use the ani
 About Us Style
 --------------------------------------------- 
 */
+.citas{
+  font-weight: 700;
+
+  font-family: 'Titillium Web' !important;
+  text-align: left;
+
+}
+/* primera letra mayuscula en slide */
+.first-letter {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 900;
+}
 
 #about {
   padding-top: 130px;
@@ -1344,12 +1380,17 @@ Services Style
   border-radius: 5px;
   transition: all .3s;
   margin-bottom: 30px;
+  min-height: 400px;
+  min-width: 300px;
 }
+
 
 .service-item:hover {
   background-color: #fff;
   border: 2px solid transparent;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+ min-height:  400px;
+  min-width: 300px;
 }
 
 .service-item .icon {
@@ -1623,6 +1664,37 @@ footer p a:hover {
   color: #4771cb;
 }
 
+/* 
+---------------------------------------------
+Grid introduccion
+--------------------------------------------- 
+*/
+.grid-fotos{
+  display:grid;
+  align-items: stretch;
+  grid-template-columns: 20% 20% 20% ;
+  grid-template-rows: 65% 20% 20%;
+  max-width: 1200px;
+}
+
+.intendenta{
+  grid-column:1/4;
+}
+
+.resto{
+  overflow: hidden;
+  margin-left: 0.5em;
+}
+
+
+.foto_intendenta, .foto_resto{ filter: grayscale(100%); 
+  transition: filter .3s ease-in-out;
+  height: auto;
+  
+  margin: auto;
+  display: block;
+}
+.foto_intendenta:hover, .foto_resto:hover { filter: none;}
 /* 
 ---------------------------------------------
 responsive
