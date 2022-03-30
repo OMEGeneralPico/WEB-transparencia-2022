@@ -10,6 +10,17 @@ function generarchartbarra(etiquetas, data2, ctx) {
         label: 'Presupuesto',
         data: data2,
         backgroundColor: [
+          'rgba(71, 123, 168, 0.2)',
+          'rgba(105, 190, 190, 0.2)',
+          'rgba(35, 145, 200, 0.2)',
+          'rgba(153, 070, 135, 0.2)',
+          'rgba(190, 135, 180, 0.2)',
+          'rgba(215, 90, 218, 0.2)',
+          'rgba(240, 150, 145, 0.2)',
+          'rgba(55, 55, 55,0.2)',
+          'rgba(235, 235, 225,0.2)'
+        ],
+        borderColor: [
           'rgba(71, 123, 168, 1)',
           'rgba(105, 190, 190, 1)',
           'rgba(35, 145, 200, 1)',
@@ -19,17 +30,6 @@ function generarchartbarra(etiquetas, data2, ctx) {
           'rgba(240, 150, 145, 1)',
           'rgba(55, 55, 55,1)',
           'rgba(235, 235, 225,1)'
-        ],
-        borderColor: [
-          'rgba(71, 123, 168, 0)',
-          'rgba(105, 190, 190, 0)',
-          'rgba(35, 145, 200, 0)',
-          'rgba(153, 070, 135, 0)',
-          'rgba(190, 135, 180, 0)',
-          'rgba(215, 90, 218, 0)',
-          'rgba(240, 150, 145, 0)',
-          'rgba(55, 55, 55,0)',
-          'rgba(235, 235, 225,0)'
         ],
         borderWidth: 1
       }]

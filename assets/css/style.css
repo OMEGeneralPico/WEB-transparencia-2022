@@ -1,0 +1,31 @@
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #00A27F;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #68C0BD;
+  }
+   
+  .grid-mapa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 500px;
+    height: 100%;
+  }
+  /* colores que se pueden usar: #00A27F #68C0BD | #2290C7 | #994887 #BE87B4 #D85C76  #EE9491 | */
