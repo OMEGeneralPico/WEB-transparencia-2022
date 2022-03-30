@@ -209,7 +209,7 @@ body {
 
 .main-blue-button a {
   display: inline-block;
-  background-color: #D85C76;
+  background-color: #00A27F;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -223,13 +223,13 @@ body {
 
 .main-blue-button a:hover {
   background-color: #fff!important;
-  color: #BE87B4!important;
-  border-bottom: 2px solid #D85C76!important;
+  color: #68C0BD!important;
+  border-bottom: 2px solid #00A27F!important;
 }
 
 .main-green-button a {
   display: inline-block;
-  background-color: #D85C76;
+  background-color: #00A27F;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -237,14 +237,14 @@ body {
   padding: 12px 25px;
   border-radius: 23px;
   letter-spacing: 0.25px;
-  border-bottom: 2px solid #BE87B4!important;
+  border-bottom: 2px solid #00A27F!important;
   transition: all .3s;
 }
 
 .main-green-button a:hover {
-  background-color: #994887!important;
+  background-color: #68C0BD!important;
   color: #fff!important;
-  border-bottom: 2px solid #994887!important;
+  border-bottom: 2px solid #68C0BD!important;
 }
 
 
@@ -1632,14 +1632,14 @@ form#contact button {
   padding: 12px 25px;
   border-radius: 23px;
   letter-spacing: 0.25px;
-  border-bottom: 2px solid #4771cb!important;
+  border-bottom: 2px solid #00A27F!important;
   transition: all .3s;
   outline: none;
   border: none;
 }
 
 form#contact button:hover {
-  background-color: #4771cb!important;
+  background-color: #68C0BD!important;
   color: #fff!important;
   border-bottom: 2px solid #00A27F!important;
 }
