@@ -1158,6 +1158,13 @@ Features Style
 /* This for loop creates the  necessary css animation names 
 Due to the split circle of progress-left and progress right, we must use the animations on each side. 
 */
+.progress[data-percentage="1"] .progress-right .progress-bar {
+  animation: loading-1 1.5s linear forwards;
+}
+.progress[data-percentage="1"] .progress-left .progress-bar {
+  animation: 0;
+}
+
 .progress[data-percentage="3"] .progress-right .progress-bar {
   animation: loading-1 1.5s linear forwards;
 }
@@ -1170,13 +1177,30 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .progress[data-percentage="5"] .progress-left .progress-bar {
   animation: 0;
 }
+.progress[data-percentage="18.14"] .progress-right .progress-bar {
+  animation: loading-1 1.5s linear forwards;
+}
+.progress[data-percentage="18.14"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress[data-percentage="8"] .progress-right .progress-bar {
+  animation: loading-1 1.5s linear forwards;
+}
+.progress[data-percentage="8"] .progress-left .progress-bar {
+  animation: 0;
+}
 .progress[data-percentage="10"] .progress-right .progress-bar {
   animation: loading-1 1.5s linear forwards;
 }
 .progress[data-percentage="10"] .progress-left .progress-bar {
   animation: 0;
 }
-
+.progress[data-percentage="18.45"] .progress-right .progress-bar {
+  animation: loading-1 1.5s linear forwards;
+}
+.progress[data-percentage="18.45"] .progress-left .progress-bar {
+  animation: 0;
+}
 .progress[data-percentage="20"] .progress-right .progress-bar {
   animation: loading-2 1.5s linear forwards;
 }
@@ -1210,7 +1234,12 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .progress[data-percentage="50"] .progress-left .progress-bar {
   animation: 0;
 }
-
+.progress[data-percentage="54.68"] .progress-right .progress-bar {
+  animation: loading-1 1.5s linear forwards;
+}
+.progress[data-percentage="54.68"] .progress-left .progress-bar {
+  animation: 0;
+}
 .progress[data-percentage="60"] .progress-right .progress-bar {
   animation: loading-5 1.5s linear forwards;
 }
