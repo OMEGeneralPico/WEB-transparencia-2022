@@ -1262,6 +1262,12 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .progress[data-percentage="65"] .progress-left .progress-bar {
   animation: loading-1-5 1.5s linear forwards 1.5s;
 }
+.progress[data-percentage="68"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage="68"] .progress-left .progress-bar {
+  animation: loading-1-8 1.5s linear forwards 1.5s;
+}
 
 .progress[data-percentage="70"] .progress-right .progress-bar {
   animation: loading-5 1.5s linear forwards;
