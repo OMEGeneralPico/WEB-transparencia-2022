@@ -22,7 +22,10 @@
     rel="stylesheet">
   <link rel="icon" type="image/gif" sizes="96x96" href="https://www.generalpico.gov.ar/Arbol-favico.gif">
   <title>Web Transparencia</title>
-
+  <!-- viene del modal -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--  -->
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
@@ -33,6 +36,7 @@
   <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
   <link rel="stylesheet" href="assets/css/animated.css">
   <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-side-modals.css">
   <!--
 TemplateMo 563 SEO Dream
 
@@ -56,8 +60,10 @@ https://templatemo.com/tm-563-seo-dream
     </div>
   </div>
   <!-- ***** Preloader End ***** -->
-  <button onclick="topFunction()" id="myBtn" title="Go to top">inicio</button>
-  <!-- ***** Header Area Start ***** -->
+  <button onclick="topFunction()" id="myBtn" title="ir a inicio">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </button>
+    <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
       <div class="row">
@@ -205,7 +211,7 @@ https://templatemo.com/tm-563-seo-dream
       </div>
       <hr>
     </div>
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-lg-4">
           <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
@@ -247,17 +253,19 @@ https://templatemo.com/tm-563-seo-dream
     </div>
   </div>
   <!-- Seccion economia -->
-  <div id="economia" class="features section">
+  <div id="economia" class="our-services section">
     <div class="container">
       <hr>
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6  pb-2 mb-4">
           <div class="left-image wow fadeInLeft grid-fotos" data-wow-duration="1s" data-wow-delay="0.5s">
             <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-              <div class="section-heading">
-                <h1> <em>Economia</em> </h1>
-              </div>
-              <img style="width:300px" src="assets/images/anconetani.jpg" alt="">
+              <img id="tarjeta"  src="assets/images/economia.png" alt="" >  
+                <center>
+                  <div class="main-green-button scroll-to-section pt-2">
+                    <a href="" id="listado" data-toggle="modal" data-target="#modal_economia">Ver más</a>
+                  </div>
+                </center>   
             </div>
           </div>
         </div>
@@ -572,18 +580,68 @@ https://templatemo.com/tm-563-seo-dream
 
       </div>
     </div>
+     <!-- Modal economia -->      
+<div class="modal fade" id="modal_economia" tabindex="-1" role="dialog" aria-labelledby="modal_economia">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title">Lista de funcionarios</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container pt-3">
+          <div class="row pb-3">
+              <div class="col">
+                <h6>CONTADURÍA GENERAL:</h6> 
+                <p>CPN. Ezequiel MAZA</p>
+              </div>
+              <div class="col">
+                <h6>DIRECCIÓN DE CONTROL INTERNO Y AUDITORIA:</h6> 
+                <p>CPN. Eduardo Luis FERRARO</p>
+              </div>
+          </div>
+          <div class="row pb-3">
+            <div class="col">
+              <h6>TESORERÍA:</h6> 
+              <p>Tec. Hernán ARAGONA</p>
+            </div>
+            <div class="col">
+              <h6>DIRECCIÓN DE RENTAS:</h6> 
+              <p>CPN. Florentina HUALA</p>
+            </div>
+          </div>
+          <div class="row pb-3">
+            <div class="col">
+              <h6>DIRECCIÓN DE DESARROLLO ECONÓMICO Y PRODUCTIVO:</h6> 
+              <p>Lic. Lisandro PATEK</p>
+            </div>
+            <div class="col">
+              <h6>DIRECCIÓN DE COMERCIO:</h6> 
+              <p>Sr. Gabriel Federico MARTIN</p>
+            </div>
+          </div>                        
+</div>     
+      </div>      
+    </div>
+  </div>
+</div>
+   
     <!--Seccion Coordinacion-->
-    <div id="coordinacion" class="about-us section">
+    <div id="coordinacion" class="our-services section">
       <div class="container">
         <hr>
-        <div class="row">
+        <div class="row  pb-2 mb-4">
           <div class="col-lg-6">
             <div class="left-image wow fadeInLeft grid-fotos" data-wow-duration="1s" data-wow-delay="0.5s">
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="section-heading">
-                  <h1> <em>Coordinacion</em> </h1>
-                </div>
-                <img style="width:300px" src="assets/images/privitera.jpg" alt="">
+                <img id="tarjeta"  src="assets/images/coordinacion.png" alt="">
+                <center>
+                  <div class="main-green-button scroll-to-section pt-2">
+                    <a href=""data-toggle="modal" data-target="#modal_coordinacion" id="listado">Ver más</a>
+                  </div>
+                </center>
               </div>
             </div>
           </div>
@@ -597,8 +655,7 @@ https://templatemo.com/tm-563-seo-dream
               significa completar el semestre con una ejecución presupuestaria del 47%.
             </p>
           </div>
-        </div>
-        <hr>
+        </div>        
       </div>
       <div class="container">
         <div class="row">
@@ -772,7 +829,7 @@ https://templatemo.com/tm-563-seo-dream
           </div>
           <div class="col-lg-6">
             <div class="left-image wow fadeInLeft grid-fotos pt-4 mt-4" data-wow-duration="1s" data-wow-delay="0.5s">
-              <table class='table table-striped pr-2 pt-4 mt-4' style="width: 550px">
+              <table class='table table-striped pr-2 pt-4 mt-4' id="tablas" >
                 <tr>
                   <th colspan="2">
                     INVERSION TECNOLÓGICA 2021
@@ -801,7 +858,7 @@ https://templatemo.com/tm-563-seo-dream
             </div>
           </div>
           <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-            <table class='table table-striped'>
+            <table class='table table-striped' id="tablas">
               <tr>
                 <th colspan="2">Distribución Tareas Departamento de Servicio Técnico y Comunicaciones
                 </th>
@@ -858,18 +915,88 @@ https://templatemo.com/tm-563-seo-dream
         </div>
       </div>
     </div>
+          <!-- Modal coordinacion -->      
+<div class="modal fade" id="modal_coordinacion" tabindex="-1" role="dialog" aria-labelledby="modal_coordinacion">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title">Lista de funcionarios</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- <h6 class="modal-title" style="text-align: center; font-size: 1.8em;">Lista de funcionarios</h6> -->
+        <div class="container pt-3">
+          <div class="row pb-3">
+              <div class="col">
+                <h6>DIRECCIÓN GENERAL DE ASUNTOS LEGALES:</h6> 
+                <p>Dra. María Valeria MALVICINO</p>
+              </div>
+              <div class="col">
+                <h6>DIRECCIÓN DE GESTIÓN Y ARTICULACIÓN:</h6> 
+                <p>Sra. Gabriela Anahí LUNA ECHEGARAY</p>
+              </div>
+          </div>
+          <div class="row pb-3">
+            <div class="col">
+              <h6>DIRECCIÓN DE COMUNICACIONES:</h6> 
+              <p>Lic. Stella Maris ACEBAL</p>
+            </div>
+            <div class="col">
+              <h6>COORDINACIÓN DE DISEÑO COMUNICACIONAL:</h6> 
+              <p>D.C.V. Guillermo BONESSI</p>
+            </div>
+          </div>
+          <div class="row pb-3">
+            <div class="col">
+              <h6>JUZGADO DE FALTAS:</h6> 
+              <p>Dr. Eduardo LETTIERI</p>
+            </div>
+            <div class="col">
+              <h6>SECRETARIO DE TRÁNSITO DEL TRIBUNAL DE FALTAS:</h6> 
+              <p>Dr. Juan José Antonio GOMEZ HUINCHINAO</p>
+            </div>
+          </div>
+          <div class="row pb-3">
+            <div class="col">
+              <h6>SECRETARIA DE COMERCIO DEL TRIBUNAL DE FALTAS:</h6> 
+              <p>Dra. Laura Soledad MORALES</p>
+            </div>
+            <div class="col">
+              <h6>COORDINACIÓN DE TECNOLOGÍAS DE LA INFORMACIÓN:</h6> 
+              <p>Ing. María Belén MORELLO</p>
+            </div>
+          </div>
+          <div class="row pb-3">
+            <div class="col">
+              <h6>ORGANISMO DESCENTRALIZADO DE PLANTA DE ASFALTO:</h6> 
+              <p>Ing. Diego Nicolas GARRO</p>
+            </div>
+            <div class="col">
+              <h6>ORGANISMO DESCENTRALIZADO CAMINOS VECINALES:</h6> 
+              <p>Sr. Darío Germán BALBIDARE</p>
+            </div>
+          </div>                        
+</div>     
+      </div>      
+    </div>
+  </div>
+</div>
     <!--Seccion Desarrollo Social-->
-    <div id="DesarrolloSocial" class="about-us section">
+    <div id="DesarrolloSocial" class="our-services section">
       <div class="container">
         <hr>
-        <div class="row">
+        <div class="row pb-2 mb-4">
           <div class="col-lg-6">
             <div class="left-image wow fadeInLeft grid-fotos" data-wow-duration="1s" data-wow-delay="0.5s">
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="section-heading">
-                  <h1> <em>Desarrollo Social</em> </h1>
-                </div>
-                <img style="width:300px" src="assets/images/cabrino.jpg" alt="">
+                <img id="tarjeta"  src="assets/images/desarrollo.png" alt="" > 
+                <center>
+                  <div class="main-green-button scroll-to-section pt-2">
+                    <a href="" id="listado" data-toggle="modal" data-target="#modal_desarrollo">Ver más</a>
+                  </div>
+                </center>
               </div>
             </div>
           </div>
@@ -884,7 +1011,6 @@ https://templatemo.com/tm-563-seo-dream
             </p>
           </div>
         </div>
-        <hr>
       </div>
       <div class="container">
         <div class="row">
@@ -1096,7 +1222,7 @@ https://templatemo.com/tm-563-seo-dream
           </div>
           <div class="col-lg-6">
             <div class="left-image wow fadeInLeft grid-fotos pt-4 mt-4" data-wow-duration="1s" data-wow-delay="0.5s">
-              <table class='table table-striped pr-2 pt-4 mt-4' style="width: 550px">
+              <table class='table table-striped pr-2 pt-4 mt-4' id="tablas">
                 <tr>
                   <th colspan="2" style="text-align: center;">
                     Género
@@ -1140,7 +1266,7 @@ https://templatemo.com/tm-563-seo-dream
             </div>
           </div>
           <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-            <table class='table table-striped'>
+            <table class='table table-striped' id="tablas">
               <tr>
                 <th colspan="2" style="text-align: center;">
                   Nivel educativo
@@ -1148,7 +1274,7 @@ https://templatemo.com/tm-563-seo-dream
               </tr>
               <tr>
                 <td>Secundario incompleto</td>
-                <td>292/td>
+                <td>292</td>
               </tr>
               <tr>
                 <td>Secundario completo </td>
@@ -1246,18 +1372,77 @@ https://templatemo.com/tm-563-seo-dream
         </div>
       </div>
     </div>
+      <!-- Modal desarrollo -->      
+<div class="modal fade" id="modal_desarrollo" tabindex="-1" role="dialog" aria-labelledby="modal_desarrollo">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title">Lista de funcionarios</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container pt-3">
+          <div class="row pb-3">
+              <div class="col">
+                <h6>DIRECCIÓN GENERAL DE NUEVAS ECONOMÍAS:</h6> 
+                <p>Prof. María Del Carmen GARCIA SUAREZ</p>
+              </div>
+              <div class="col">
+                <h6>DIRECCIÓN DE ECONOMÍA POPULAR:</h6> 
+                <p>Sr. Norberto Manuel LAZARTE</p>
+              </div>
+          </div>
+          <div class="row pb-3">
+            <div class="col">
+              <h6>DIRECCIÓN DE FAMILIA:</h6> 
+              <p>Lic. Ivana Jésica PÉREZ SANTILLÁN</p>
+            </div>
+            <div class="col">
+              <h6>COORDINACIÓN Y PLANIFICACIÓN DE PROGRAMAS SOCIALES:</h6> 
+              <p>A.S. Patricia VARGAS</p>
+            </div>
+          </div>
+          <div class="row pb-3">
+            <div class="col">
+              <h6>DIRECCIÓN DE POLÍTICAS DE GENERO:</h6> 
+              <p>Sra. Graciela Lucrecia DURAN</p>
+            </div>
+            <div class="col">
+              <h6>UNIDAD LOCAL:</h6> 
+              <p>Dra. Gabriela Inés HUBERT</p>
+            </div>
+          </div>   
+          <div class="row pb-3">
+            <div class="col">
+              <h6>DIRECCIÓN DE JUVENTUD:</h6> 
+              <p>Dr. Nicolas BOGLIETTI</p>
+            </div>
+            <div class="col">
+              <h6>DIRECCIÓN DE DEPORTES Y ACTIVIDADES FÍSICAS:</h6> 
+              <p> Prof. Mariela Elizabet LERA</p>
+            </div>
+          </div>                       
+</div>     
+      </div>      
+    </div>
+  </div>
+</div>
 <!-- Planificacion urbana -->
-<div id="PlanificacionUrbana" class="about-us section">
+<div id="PlanificacionUrbana" class="our-services section">
   <div class="container">
     <hr>
-    <div class="row">
+    <div class="row  pb-2 mb-4">
       <div class="col-lg-6">
         <div class="left-image wow fadeInLeft grid-fotos" data-wow-duration="1s" data-wow-delay="0.5s">
           <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-            <div class="section-heading">
-              <h1> <em>Planificación Urbana</em> </h1>
-            </div>
-            <img style="width:300px" src="assets/images/gabba.jpg" alt="">
+            <img id="tarjeta" src="assets/images/planificacion.png" alt="">
+            <center>
+              <div class="main-green-button scroll-to-section pt-2">
+                <a href="" id="listado" data-toggle="modal" data-target="#modal_planificacion">Ver más</a>
+              </div>
+            </center>
           </div>
         </div>
       </div>
@@ -1270,7 +1455,6 @@ https://templatemo.com/tm-563-seo-dream
         </p>
       </div>
     </div>
-    <hr>
   </div>
   <div class="container">
     <div class="row">
@@ -1536,18 +1720,63 @@ https://templatemo.com/tm-563-seo-dream
     </div>
   </div>
 </div>
+   <!-- Modal planificacion -->      
+   <div class="modal fade" id="modal_planificacion" tabindex="-1" role="dialog" aria-labelledby="modal_planificacion">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Lista de funcionarios</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container pt-3">
+            <div class="row pb-3">
+                <div class="col">
+                  <h6>DIRECCIÓN DE INFRAESTRUCTURA Y OBRAS MUNICIPALES:</h6> 
+                  <p>Ing. Sebastián Víctor ADAMO</p>
+                </div>
+                <div class="col">
+                  <h6>DIRECCIÓN DE DISEÑO Y PLANIFICACIÓN TERRITORIAL:</h6> 
+                  <p>Ing. Marcos Federico Villa</p>
+                </div>
+            </div>
+            <div class="row pb-3">
+              <div class="col">
+                <h6>ENTE REGULADOR DE SERVICIOS CONCESIONADOS:</h6> 
+                <p>Arq. Horacio Alberto VIOLA</p>
+              </div>
+              <div class="col">
+                <h6>DIRECCIÓN DE PLANEAMIENTO Y CATASTRO:</h6> 
+                <p>Arq. Virginia Lucero ARGUINZONIZ</p>
+              </div>
+            </div>
+            <div class="row pb-3">
+              <div class="col">
+                <h6>DIRECCIÓN DE OBRAS PARTICULARES:</h6> 
+                <p>Arq. Javier Horacio CAREGGIO</p>
+              </div>
+            </div>                        
+  </div>     
+        </div>      
+      </div>
+    </div>
+  </div>
 <!--Seccion Servicios publicos-->
-<div id="ServiciosPublicos" class="about-us section">
+<div id="ServiciosPublicos" class="our-services section">
   <div class="container">
     <hr>
-    <div class="row">
+    <div class="row  pb-2 mb-4">
       <div class="col-lg-6">
         <div class="left-image wow fadeInLeft grid-fotos" data-wow-duration="1s" data-wow-delay="0.5s">
           <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-            <div class="section-heading">
-              <h1> <em>Servicios Publicos</em> </h1>
-            </div>
-            <img style="width:300px" src="assets/images/campo.jpg" alt="">
+            <img id="tarjeta"  src="assets/images/servicios.png" alt="">
+            <center>
+              <div class="main-green-button scroll-to-section pt-2">
+                <a href="" id="listado" data-toggle="modal" data-target="#modal_servicios">Ver más</a>
+              </div>
+            </center>
           </div>
         </div>
       </div>
@@ -1563,7 +1792,6 @@ https://templatemo.com/tm-563-seo-dream
         </p>
       </div>
     </div>
-    <hr>
   </div>
   <div class="container">
     <div class="row">
@@ -1813,18 +2041,63 @@ https://templatemo.com/tm-563-seo-dream
     </div>
   </div>
 </div> 
-<!-- gobierno -->
-<div id="Gobierno" class="about-us section">
+ <!-- Modal servicios -->      
+ <div class="modal fade" id="modal_servicios" tabindex="-1" role="dialog" aria-labelledby="modal_servicios">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title">Lista de funcionarios</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container pt-3">
+          <div class="row pb-3">
+              <div class="col">
+                <h6>DIRECCIÓN GENERAL DE AMBIENTE Y DESARROLLO SUSTENTABLE:</h6> 
+                <p>Ing. Melina MEDUS</p>
+              </div>
+              <div class="col">
+                <h6>DIRECCIÓN DE GESTIÓN AMBIENTAL:</h6> 
+                <p>Ing. Carol Eliana CASTILLO FIGUEROA</p>
+              </div>
+          </div>
+          <div class="row pb-3">
+            <div class="col">
+              <h6>DIRECCIÓN DE ZOONOSIS Y VECTORES:</h6> 
+              <p>Med. Vet. Matías Alejandro CALMELS</p>
+            </div>
+            <div class="col">
+              <h6>DIRECCIÓN DE ESPACIOS PÚBLICOS:</h6> 
+              <p>Ing. Florencia Lis VIVALDA</p>
+            </div>
+          </div>
+          <div class="row pb-3">
+            <div class="col">
+              <h6>DIRECCIÓN DE SERVICIOS PÚBLICOS:</h6> 
+              <p>Sr. Walter QUINTÍN</p>
+            </div>
+          </div>                        
+</div>     
+      </div>      
+    </div>
+  </div>
+</div>
+<!-- seccion gobierno -->
+<div id="Gobierno" class="our-services section">
   <div class="container">
     <hr>
-    <div class="row">
+    <div class="row  pb-2 mb-4">
       <div class="col-lg-6">
         <div class="left-image wow fadeInLeft grid-fotos" data-wow-duration="1s" data-wow-delay="0.5s">
           <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-            <div class="section-heading">
-              <h1> <em>Gobierno</em> </h1>
-            </div>
-            <img style="width:300px" src="assets/images/pildain.jpg" alt="">
+            <img id="tarjeta"  src="assets/images/gobierno.png" alt="">
+            <center>
+              <div class="main-green-button scroll-to-section pt-2">
+                <a href="" id="listado" data-toggle="modal" data-target="#modal_gobierno">Ver más</a>
+              </div>
+            </center>
           </div>
         </div>
       </div>
@@ -1838,7 +2111,6 @@ https://templatemo.com/tm-563-seo-dream
         </p>
       </div>
     </div>
-    <hr>
   </div>
   <div class="container">
     <div class="row">
@@ -2066,6 +2338,54 @@ https://templatemo.com/tm-563-seo-dream
     </div>
   </div>
 </div> 
+   <!-- Modal gobierno -->      
+   <div class="modal fade" id="modal_gobierno" tabindex="-1" role="dialog" aria-labelledby="modal_gobierno">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Lista de funcionarios</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container pt-3">
+            <div class="row pb-3">
+                <div class="col">
+                  <h6>DIRECCIÓN DE PREVENCIÓN Y CONVIVENCIA CIUDADANA:</h6> 
+                  <p>Crio. Gral. (Retirado) Pablo Gustavo GANDINO</p>
+                </div>
+                <div class="col">
+                  <h6>DIRECCIÓN DE RECURSOS HUMANOS:</h6> 
+                  <p>Lic. Andrea BUSTOS</p>
+                </div>
+            </div>
+            <div class="row pb-3">
+              <div class="col">
+                <h6>DIRECCIÓN DE EDUCACIÓN Y CULTURA:</h6> 
+                <p>Prof. María del Carmen ELIZALDE</p>
+              </div>
+              <div class="col">
+                <h6>SUBDIRECCIÓN DE DESARROLLO CULTURA:</h6> 
+                <p>Sr. Matías RACH</p>
+              </div>
+            </div>
+            <div class="row pb-3">
+              <div class="col">
+                <h6>COORDINACIÓN DE CABILDO XXI:</h6> 
+                <p>Prof. Gabriela Alejandra RAMIREZ</p>
+              </div>
+              <div class="col">
+                <h6>DIRECCIÓN DE ORGANISMOS INSTITUCIONALES:</h6> 
+                <p>Dr. Nicolas MENDOZA</p>
+              </div>
+            </div>                        
+  </div>     
+        </div>      
+      </div>
+    </div>
+  </div>
+  <!-- cierre -->
 <div id="contact" class="contact-us section">
   <div class="container">
      <div class="row">
@@ -2138,7 +2458,9 @@ https://templatemo.com/tm-563-seo-dream
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"></script>
 
-
+    <!-- viene del modal -->  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+         
 
 </body>
 

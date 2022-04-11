@@ -13,10 +13,19 @@
     background-color: #00A27F;
     color: white;
     cursor: pointer;
-    padding: 15px;
+    padding: 10px;
     border-radius: 4px;
   }
-  
+  @media (max-width: 360px) {
+    #myBtn {
+      visibility: hidden;
+    }
+  }
+  @media (max-width: 412px) {
+    #myBtn {
+      visibility: hidden;
+    }
+  }
   #myBtn:hover {
     background-color: #68C0BD;
   }
@@ -27,6 +36,61 @@
     align-items: center;
     max-width: 500px;
     height: 100%;
+  }
+  h6{
+    font-weight: bold;
+    color: #00A27F;
+  }
+  #tarjeta{    
+    width: 400px;
+  }
+  @media (max-width: 360px) {
+    #tarjeta {
+      width: 300px;
+    }
+  }
+  
+  @media (max-width: 412px) {
+    #tarjeta {
+      width: 390px;
+    }
+  }
+  .modal-title{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #373737;
+  }
+  #listado{
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding: 8px 10px;
+    border-radius: 10px;
+   }
+   @media (max-width: 360px) {
+    #listado {
+      width: 80px;
+      height: 40px;
+    }
+  }
+  @media (max-width: 412px) {
+    #listado {
+      width: 80px;
+      height: 40px;
+    }
+  }
+
+  #tablas{
+    width: 550px;
+  }
+  @media (max-width: 360px) {
+    #tablas{
+      width: 340px;
+    }
+  }
+  @media (max-width: 412px) {
+    #tablas{
+      width: 380px;
+    }
   }
   /*
    colores que se pueden usar: 
