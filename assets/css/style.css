@@ -16,16 +16,7 @@
     padding: 10px;
     border-radius: 4px;
   }
-  @media (max-width: 360px) {
-    #myBtn {
-      visibility: hidden;
-    }
-  }
-  @media (max-width: 412px) {
-    #myBtn {
-      visibility: hidden;
-    }
-  }
+ 
   #myBtn:hover {
     background-color: #68C0BD;
   }
@@ -44,17 +35,17 @@
   #tarjeta{    
     width: 400px;
   }
-  @media (max-width: 360px) {
+  /* @media (max-width: 360px) {
     #tarjeta {
       width: 300px;
     }
-  }
+  } */
   
-  @media (max-width: 412px) {
+/*   @media (max-width: 412px) {
     #tarjeta {
       width: 390px;
     }
-  }
+  } */
   .modal-title{
     font-weight: bold;
     text-transform: uppercase;
@@ -66,32 +57,97 @@
     padding: 8px 10px;
     border-radius: 10px;
    }
-   @media (max-width: 360px) {
+/*    @media (max-width: 360px) {
     #listado {
       width: 80px;
       height: 40px;
     }
-  }
-  @media (max-width: 412px) {
+  } */
+ /*  @media (max-width: 412px) {
     #listado {
       width: 80px;
       height: 40px;
     }
-  }
+  } */
 
   #tablas{
     width: 550px;
   }
-  @media (max-width: 360px) {
+  @media  (max-width: 390px){
+    #myBtn {
+      visibility: hidden;
+    }
     #tablas{
       width: 340px;
     }
+    #tarjeta {
+      width: 340px;
+    }
+    #listado {
+      width: 80px;
+      height: 40px;
+    }
   }
-  @media (max-width: 412px) {
+  @media (max-width: 360px) {
+    #myBtn {
+      visibility: hidden;
+    }
+    #tablas{
+      width: 320px;
+    }
+    #tarjeta {
+      width: 320px;
+    }
+    #listado {
+      width: 80px;
+      height: 40px;
+    }
+  }
+  
+
+  @media (min-width: 412px) {
+    /* #myBtn {
+      visibility: hidden;
+    } */
+    #tarjeta {
+      width: 390px;
+    }
+    #listado {
+      width: 80px;
+      height: 40px;
+    }
     #tablas{
       width: 370px;
     }
   }
+
+  .mail {
+    position: absolute;
+    left: 90%;
+    bottom: 10%;
+  }
+  .zoom {
+    padding: 50px;
+    transition: transform .2s;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+/*   @media (max-width: 360px) {
+    #tablas{
+      width: 340px;
+    }
+  } */
+  /* @media (max-width: 412px) {
+    #tablas{
+      width: 370px;
+    }
+  } */
   /*
    colores que se pueden usar: 
   verde:  #00A27F 

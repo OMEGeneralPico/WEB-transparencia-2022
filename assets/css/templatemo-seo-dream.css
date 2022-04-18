@@ -1741,7 +1741,8 @@ form#contact input {
 }
 
 form#contact input::placeholder {
-  color: #aaa;
+  color: #000;
+  opacity: 1;
 }
 
 form#contact textarea {
@@ -1763,7 +1764,7 @@ form#contact textarea {
 }
 
 form#contact textarea::placeholder {
-  color: #aaa;
+  color: #000;
 }
 
 form#contact button {

@@ -81,8 +81,6 @@ https://templatemo.com/tm-563-seo-dream
               <li class="scroll-to-section"><a href="#PlanificacionUrbana">Planificación Urbana</a></li>
               <li class="scroll-to-section"><a href="#ServiciosPublicos">Servicios Publicos</a></li>
               <li class="scroll-to-section"><a href="#Gobierno">Gobierno</a></li>
-              <!-- <li class="scroll-to-section"><a href="#">Gobierno</a></li> -->
-              <!-- <li class="scroll-to-section"><div class="main-blue-button"><a href="#contact">Get Your Quote</a></div></li> -->
             </ul>
             <a class='menu-trigger'>
               <span>Menu</span>
@@ -159,7 +157,7 @@ https://templatemo.com/tm-563-seo-dream
             <div class="resto"><a data="Alberto Campo" href="#ServiciosPublicos" class="tip"><img src="assets/images\campo.jpg"
                   class="foto_resto" title="Alberto Campo"></a>
             </div>
-            <div class="resto"><a data="Pablo Pildain" href="#gobierno" class="tip"><img src="assets/images\pildain.jpg"
+            <div class="resto"><a data="Pablo Pildain" href="#Gobierno" class="tip"><img src="assets/images\pildain.jpg"
                   class="foto_resto" title="Pablo Pildain"></a>
             </div>
 
@@ -991,12 +989,17 @@ https://templatemo.com/tm-563-seo-dream
           <div class="col-lg-6">
             <div class="left-image wow fadeInLeft grid-fotos" data-wow-duration="1s" data-wow-delay="0.5s">
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img id="tarjeta"  src="assets/images/desarrollo.png" alt="" > 
-                <center>
-                  <div class="main-green-button scroll-to-section pt-2">
-                    <a href="" id="listado" data-toggle="modal" data-target="#modal_desarrollo">Ver más</a>
-                  </div>
-                </center>
+                <div class="col-md-auto">                  
+                    <img id="tarjeta"  src="assets/images/desarrollo.png" alt="">                 
+                    <!-- <center> -->
+                      <div class="main-green-button scroll-to-section pt-2">
+                        <a href="" id="listado" data-toggle="modal" data-target="#modal_desarrollo">Ver más</a>
+                      </div>
+                    <!-- </center> -->
+                    
+                </div>
+                 
+            
               </div>
             </div>
           </div>
@@ -1962,12 +1965,41 @@ https://templatemo.com/tm-563-seo-dream
           <span class="citas">El Plan GIRSU | </span>
           Se continuó con el Relevamiento de Indicadores de recuperación de residuos, arrojando un total de 129.366,5 kg según las siguientes categorías:
         </p>
-        <p> Cartón y papeles: 36.240 Kg</p>
-        <p>Plástico: 12.626 Kg </p>
-        <p>Vidrio: 67.498 Kg </p>
-        <p>Metales: 1.382 Kg </p>
-        <p>Chatarra: 11.620 Kg </p>
-        </p>       
+        
+        </p>    
+        <table class='table table-striped table-sm pt-4 mt-4' id="tablas" >
+          <tr>
+            <th colspan="1">
+              Tipo de residuo
+            </th>
+            <th colspan="1">
+              Cantidad
+            </th>
+          </tr>
+          
+          <tr>
+            <td>Cartón y papeles</td>
+            <td>36.240 Kg</td>
+          </tr>
+          <tr>
+            <td>Plástico</td>
+            <td>12.626 Kg</td>
+          </tr>
+          <tr>
+            <td>Vidrio</td>
+            <td>67.498 Kg</td>
+          </tr>
+          <tr>
+            <td>Metales</td>
+            <td>1.382 Kg</td>
+          </tr>
+          <tr>
+            <td>Chatarra</td>
+            <td>11.620 Kg</td>
+          </tr>
+          <tr>
+            
+        </table>   
         <p class="pt-3 mt-3">          
           Se firmaron tres (3) importantes convenios, uno con la empresa Coca Cola, que entregó 3 “Eco-Puntos”, 
           instalados en comercios de la ciudad para la disposición de botellas PET en el marco del Programa “Un 
@@ -2422,6 +2454,63 @@ https://templatemo.com/tm-563-seo-dream
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
+            <div class="mail">
+              <!--  href="mailto:estadistica.gpico@gmail.com"  agregar codigo -->
+              <a data-toggle="modal" data-target="#modal_contacto" title="Contacto"><img src="assets/images/icono_mail.png" class="zoom" width="50" height="50"></a>        
+            </div>       
+        <!-- modal contacto  -->
+        <div class="modal fade" id="modal_contacto" tabindex="-1" role="dialog" aria-labelledby="modal_contacto">
+          <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                      <form id="contact" action="assets/php/enviar.php" method="post">
+                        <div class="row">
+                          <div class="col-lg-9">
+                            <div class="section-heading">
+                              <h2> <em>Envianos tus dudas o sugerencias</em></h2>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="row">
+                              <div class="col-lg-6">
+                                <fieldset>
+                                  <input type="name" name="name" id="name" placeholder="Ingrese su nombre" autocomplete="on" required>
+                                </fieldset>
+                              </div>                                  
+                              <div class="col-lg-6">
+                                <fieldset>
+                                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Ingrese el correo al que se le enviara la respuesta" required="">
+                                </fieldset>
+                              </div>                                  
+                              <div class="col-lg-12">
+                                <fieldset>
+                                  <textarea name="message" type="text" class="form-control" id="message" placeholder="Escriba su mensaje" required=""></textarea>  
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12">
+                                <fieldset>
+                                  <button type="submit" id="form-submit" class="main-button ">Enviar</button>
+                                </fieldset>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </div>    
+            </div>
+          </div>
+        </div>
+       
             algo
           </div>
         </div>
@@ -2438,8 +2527,7 @@ https://templatemo.com/tm-563-seo-dream
     <script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/boton.js"></script>
-
-
+  
 
     <!-- chart js -->
     <script src="assets/js\jquery-2.1.1.js"></script>
