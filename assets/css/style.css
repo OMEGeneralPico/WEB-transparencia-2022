@@ -57,6 +57,12 @@
     padding: 8px 10px;
     border-radius: 10px;
    }
+
+   #firma{
+    width:150px;
+    height: 120px;
+    float:right;
+   }
 /*    @media (max-width: 360px) {
     #listado {
       width: 80px;
@@ -87,6 +93,10 @@
       width: 80px;
       height: 40px;
     }
+    #firma{
+      width:50%;
+      float:right;
+     }
   }
   @media (max-width: 360px) {
     #myBtn {
@@ -102,8 +112,30 @@
       width: 80px;
       height: 40px;
     }
+    #firma{
+      width:50%;
+      float:right;
+     }
   }
-  
+  @media (max-width: 384px) {
+    #myBtn {
+      visibility: hidden;
+    }
+    #tablas{
+      width: 320px;
+    }
+    #tarjeta {
+      width: 320px;
+    }
+    #listado {
+      width: 80px;
+      height: 40px;
+    }
+    #firma{
+      width:50%;
+      float:right;
+     }
+  }
 
   @media (min-width: 412px) {
     /* #myBtn {
@@ -119,11 +151,12 @@
     #tablas{
       width: 370px;
     }
+    
   }
 
   .mail {
     position: absolute;
-    left: 90%;
+    left: 50%;
     bottom: 10%;
   }
   .zoom {
@@ -138,16 +171,7 @@
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.5); 
   }
-/*   @media (max-width: 360px) {
-    #tablas{
-      width: 340px;
-    }
-  } */
-  /* @media (max-width: 412px) {
-    #tablas{
-      width: 370px;
-    }
-  } */
+
   /*
    colores que se pueden usar: 
   verde:  #00A27F 
