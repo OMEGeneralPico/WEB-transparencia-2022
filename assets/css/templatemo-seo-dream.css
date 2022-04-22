@@ -27,7 +27,8 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap');
 /* 
 ---------------------------------------------
 reset
@@ -102,7 +103,7 @@ header, nav, section, article, aside, footer, hgroup {
 }
 
 html, body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 400;
   background-color: #fff;
   -ms-text-size-adjust: 100%;
@@ -124,7 +125,7 @@ ul {
 }
 
 p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 30px;
   color: #2a2a2a;
 }
@@ -142,7 +143,7 @@ global styles
 html,
 body {
   background: #fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 ::selection {
@@ -316,7 +317,7 @@ header
   transition: all 0.3s ease 0s;
 }
 
-.header-area .main-nav .logo h4 {
+/* .header-area .main-nav .logo h4 {
     font-size: 30px;
     font-weight: 800;
     text-transform: capitalize;
@@ -327,7 +328,7 @@ header
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-}
+} */
 
 .header-area .main-nav .logo h4 img {
   max-width: 30px;
@@ -377,7 +378,7 @@ header
 .background-header .main-nav .nav li:last-child a:hover {
   color: #BE87B4 !important;
 } */
-
+/* este es necesario */
 .header-area .main-nav .nav li a {
   display: block;
   font-weight: 500;
@@ -396,12 +397,14 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #000!important;
+/*   color: #000!important; */
+  color: #fff;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #000!important;
+  
+  color: #fff;
   opacity: 1;
 }
 
@@ -578,10 +581,10 @@ header
   background-color: #fff;
 }
 
-.background-header .main-nav .menu-trigger.active span:before {
+/* .background-header .main-nav .menu-trigger.active span:before {
   background-color: #fff;
 }
-
+ */
 .header-area .main-nav .menu-trigger.active span:after {
   -moz-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
@@ -590,10 +593,10 @@ header
   background-color: #fff;
 }
 
-.background-header .main-nav .menu-trigger.active span:after {
+/* .background-header .main-nav .menu-trigger.active span:after {
   background-color: #fff;
 }
-
+ */
 .header-area.header-sticky {
   min-height: 80px;
 }
@@ -603,9 +606,9 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #00A27F;
+  color: #fff;
 }
-
+/* cambio de aspectos al cambiar la resolucion */
 @media (max-width: 1200px) {
   .header-area .main-nav .nav li {
     padding-left: 12px;
@@ -1493,10 +1496,7 @@ About Us Style
   color: #2a2a2a;
   text-transform: capitalize;
 }
-/* 
-.about-us p {
-  margin: 40px 0px;
-} */
+
 
 /* 
 ---------------------------------------------
