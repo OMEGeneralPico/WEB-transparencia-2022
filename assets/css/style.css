@@ -16,7 +16,9 @@
     padding: 10px;
     border-radius: 4px;
   }
- 
+ .introImg{
+   width: 400%;
+ }
   #myBtn:hover {
     background-color: #68C0BD;
   }
@@ -93,8 +95,7 @@
     }
     #tablas{
       width: 370px;
-    }
-    
+    }    
   }  
   @media  (max-width: 390px){
     #myBtn {
@@ -114,6 +115,11 @@
       width:50%;
       float:right;
      }
+     #mail {
+      position: absolute;
+      left: 50%;
+      bottom: 10%;
+    }
   }
   @media (max-width: 384px) {
     #myBtn {
@@ -135,6 +141,11 @@
      }
      #idt {
       font-size: 45px;
+    }
+    #mail {
+      position: absolute;
+      left: 50%;
+      bottom: 10%;
     }
   }
   @media (max-width: 360px) {
@@ -158,12 +169,24 @@
      #idt{
        font-size: 45px;
      }
+     #mail {
+      position: absolute;
+      left: 60%;
+      bottom: 10%;
+    }
+  }
+  @media (max-width: 412px){
+    #mail {
+      position: absolute;
+      left: 50%;
+      bottom: 10%;
+    }
   }
  
 
   .mail {
     position: absolute;
-    left: 50%;
+    left: 90%;
     bottom: 10%;
   }
   .zoom {
