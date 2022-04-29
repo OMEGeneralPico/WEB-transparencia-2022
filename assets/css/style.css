@@ -81,7 +81,12 @@
   #tablas{
     width: 550px;
   }
-
+@media (min-width: 1920px){
+  .introImg{
+    width: 500%;
+    height: 140%;
+  }
+}
   @media (min-width: 412px) {
     #idt {
       font-size: 50px;
