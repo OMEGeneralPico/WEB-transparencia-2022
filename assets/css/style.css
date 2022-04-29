@@ -87,7 +87,7 @@
     height: 140%;
   }
 }
-  @media (min-width: 412px) {
+ /*  @media (min-width: 412px) {
     #idt {
       font-size: 50px;
     }
@@ -187,7 +187,465 @@
       bottom: 10%;
     }
   }
+  */
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #idt {
+      font-size: 50px;
+    }
+    #tarjeta {
+      width: 390px;
+    }
+    #listado {
+      width: 80px;
+      height: 40px;
+    }
+    #tablas{
+      width: 370px;
+    }    
+    .foto_intendenta{
+      width: 110% !important;
+    }
+  }  
  
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    #idt {
+      font-size: 50px;
+    }
+    #tarjeta {
+      width: 390px;
+    }
+    #listado {
+      width: 80px;
+      height: 40px;
+    }
+    #tablas{
+      width: 370px;
+    }    
+  }  
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    #idt {
+      font-size: 50px;
+    }
+    #tarjeta {
+      width: 390px;
+    }
+    #listado {
+      width: 80px;
+      height: 40px;
+    }
+    #tablas{
+      width: 370px;
+    }     
+}
+
+/* IPHONE */
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
+/* FIN IPHONE */
+
+/* SAMSUNG */
+/* ----------- Galaxy S3 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+    #tablas{
+      width: 320px;
+    }
+    #tarjeta {
+      width: 320px;
+    }
+    #listado {
+      width: 80px;
+      height: 40px;
+    }
+    #firma{
+      width:50%;
+      float:right;
+     }
+     #idt{
+       font-size: 45px;
+     }
+     #mail {
+      position: absolute;
+      left: 60%;
+      bottom: 10%;
+    }
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+    #tablas{
+      width: 320px;
+    }
+    #tarjeta {
+      width: 320px;
+    }
+    #listado {
+      width: 80px;
+      height: 40px;
+    }
+    #firma{
+      width:50%;
+      float:right;
+     }
+     #idt{
+       font-size: 45px;
+     }
+     #mail {
+      position: absolute;
+      left: 60%;
+      bottom: 10%;
+    }
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: landscape) {
+    #tablas{
+      width: 320px;
+    }
+    #tarjeta {
+      width: 320px;
+    }
+    #listado {
+      width: 80px;
+      height: 40px;
+    }
+    #firma{
+      width:50%;
+      float:right;
+     }
+     #idt{
+       font-size: 45px;
+     }
+     #mail {
+      position: absolute;
+      left: 60%;
+      bottom: 10%;
+    }
+}
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    #tablas{
+      width: 320px;
+    }
+    #tarjeta {
+      width: 320px;
+    }
+    #listado {
+      width: 80px;
+      height: 40px;
+    }
+    #firma{
+      width:50%;
+      float:right;
+     }
+     #idt{
+       font-size: 45px;
+     }
+     #mail {
+      position: absolute;
+      left: 60%;
+      bottom: 10%;
+    }
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+    #tablas{
+      width: 320px;
+    }
+    #tarjeta {
+      width: 320px;
+    }
+    #listado {
+      width: 80px;
+      height: 40px;
+    }
+    #firma{
+      width:50%;
+      float:right;
+     }
+     #idt{
+       font-size: 45px;
+     }
+     #mail {
+      position: absolute;
+      left: 60%;
+      bottom: 10%;
+    }
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+    #tablas{
+      width: 320px;
+    }
+    #tarjeta {
+      width: 320px;
+    }
+    #listado {
+      width: 80px;
+      height: 40px;
+    }
+    #firma{
+      width:50%;
+      float:right;
+     }
+     #idt{
+       font-size: 45px;
+     }
+     #mail {
+      position: absolute;
+      left: 60%;
+      bottom: 10%;
+    }
+}
+
+/* ----------- Galaxy S6 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+    #tablas{
+      width: 320px;
+    }
+    #tarjeta {
+      width: 320px;
+    }
+    #listado {
+      width: 80px;
+      height: 40px;
+    }
+    #firma{
+      width:50%;
+      float:right;
+     }
+     #idt{
+       font-size: 45px;
+     }
+     #mail {
+      position: absolute;
+      left: 60%;
+      bottom: 10%;
+    }
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: portrait) {
+    #tablas{
+      width: 320px;
+    }
+    #tarjeta {
+      width: 320px;
+    }
+    #listado {
+      width: 80px;
+      height: 40px;
+    }
+    #firma{
+      width:50%;
+      float:right;
+     }
+     #idt{
+       font-size: 45px;
+     }
+     #mail {
+      position: absolute;
+      left: 60%;
+      bottom: 10%;
+    }
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: landscape) {
+    #tablas{
+      width: 320px;
+    }
+    #tarjeta {
+      width: 320px;
+    }
+    #listado {
+      width: 80px;
+      height: 40px;
+    }
+    #firma{
+      width:50%;
+      float:right;
+     }
+     #idt{
+       font-size: 45px;
+     }
+     #mail {
+      position: absolute;
+      left: 60%;
+      bottom: 10%;
+    }
+}
+
+
+/* FIN SAMSUNG */
 
   .mail {
     position: absolute;
