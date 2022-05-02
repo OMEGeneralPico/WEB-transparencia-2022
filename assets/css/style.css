@@ -213,6 +213,11 @@
     .foto_intendenta{
       width: 110% !important;
     }
+    #mail {
+      position: absolute;
+      left: 60%;
+      bottom: 10%;
+    }
   }  
  
 
@@ -226,7 +231,7 @@
       font-size: 50px;
     }
     #tarjeta {
-      width: 340px;
+      width: 330px;      
     }
     #listado {
       width: 80px;
@@ -256,6 +261,11 @@
     #tablas{
       width: 370px;
     }     
+    #mail {
+      position: absolute;
+      left: 60% !important;
+      bottom: 10%;
+    }
 }
 
 /* IPHONE */
