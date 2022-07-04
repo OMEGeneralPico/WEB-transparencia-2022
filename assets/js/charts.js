@@ -611,26 +611,26 @@ function animarGobierno() {
             return new Chart(ctx, {
                 type: 'bar',
                 data: {
-                    labels: ['Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+                    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
                     datasets: [
 
                         {
                             label: 'Radar',
-                            data: [236, 236, 5, 0, 390, 0],
+                            data: [124, 62, 52, 124, 65, 110],
                             backgroundColor: 'rgba(71, 123, 168, 0.2)',
                             borderColor:'rgba(71, 123, 168, 1)',
                             borderWidth: 1
                         },
                         {
                             label: 'Domo',
-                            data: [0, 0, 0, 0, 196, 13],
+                            data: [5, 0, 31, 0, 0, 0],
                             backgroundColor: 'rgba(105, 190, 190, 0.2)',
                             borderColor:'rgba(105, 190, 190, 1)',
                             borderWidth: 1
                         },
                         {
                             label: 'Fotomultas',
-                            data: [289, 289, 98, 0, 270, 195],
+                            data: [349, 385, 312, 393, 231, 315],
                             backgroundColor: 'rgba(215, 90, 218, 0.2)',
                             borderColor: 'rgba(215, 90, 218, 1)',
                             borderWidth: 1
