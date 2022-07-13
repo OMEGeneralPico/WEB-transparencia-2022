@@ -823,7 +823,7 @@ function animarcordones() {
                     labels: ['Corpico', 'Velonet', 'Telecom', 'Telefonica'],
                     datasets: [
                         {
-                            data: [235, 92, 87, 119],
+                            data: [259, 120, 128, 134],
                             borderColor: [
 
                                 'rgba(105, 190, 190, 1)',
@@ -1192,14 +1192,14 @@ function animarplanifobras() {
                 type: 'bar',
                 data: {
 
-                    labels: ['Conexión de gas natural', 'Conexión de cloacas', 'Conexión de agua potable',],
+                    labels: ['Conexión de gas natural', 'Conexión de cloacas', 'Conexión de agua potable','Conexión  de fibra óptica Banco Macro'],
                     datasets: [
                         {
                             tension: 0.1,
                             fill: false,
-                            data: [86, 66, 36,],
+                            data: [135, 61, 41,1,],
                             fill: true,
-                            backgroundColor: ['rgba(71, 123, 168, 0.2)', 'rgba(105, 190, 190, 0.2)', 'rgba(215, 90, 218, 0.2)',
+                            backgroundColor: ['rgba(71, 123, 168, 0.2)', 'rgba(105, 190, 190, 0.2)', 'rgba(215, 90, 218, 0.2)', 'rgba(210, 80, 218, 0.2)',
 
 
 
