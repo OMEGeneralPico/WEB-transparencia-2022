@@ -39,7 +39,7 @@ function animarpresupuestosecre() {
                         {
                             tension: 0.1,
                             fill: false,
-                            data: [3.98, 4.53, 13.08, 10.94, 23.69, 12.97, 7.63, 6.98, 16.21],
+                            data: [2.37, 2.59, 7.15, 4.85, 13.23, 7.17, 3.67, 3.63, 1.65],
                             fill: true,
                             backgroundColor: ['rgba(71, 123, 168, 0.2)',
                                 'rgba(105, 190, 190, 0.2)',
@@ -905,7 +905,7 @@ function animareconomiacreditos() {
                 type: 'bar',
                 data: {
 
-                    labels: ['Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+                    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Junio'],
                     datasets: [
                         {
                             data: [1200000, 650000, 1570000, 5550000, 7554553],
@@ -1001,7 +1001,7 @@ function animarCreditosSector() {
                         {
                             tension: 0.1,
                             fill: false,
-                            data: [27, 57, 16],
+                            data: [24, 7, 12],
                             fill: true,
                             backgroundColor: ['rgba(71, 123, 168, 0.2)', 'rgba(105, 190, 190, 0.2)', 'rgba(215, 90, 218, 0.2)'
                             ],
