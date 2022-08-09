@@ -720,11 +720,11 @@ function animarIntendencia() {
             return new Chart(ctx, {
                 type: 'doughnut',
                 data: {
-                    labels: ['Resoluciones', 'Disposiciones', 'Proyectos de ordenanzas'],
+                    labels: ['Resoluciones', 'Disposiciones', 'Proyectos de ordenanzas', 'Ordenanzas Promulgadas'],
                     datasets: [
 
                         {
-                            data: [3375, 67, 54],
+                            data: [3035, 122, 52, 57],
                             backgroundColor: [
                                 'rgba(71, 123, 168, 0.2)',
                                 'rgba(105, 190, 190, 0.2)',
