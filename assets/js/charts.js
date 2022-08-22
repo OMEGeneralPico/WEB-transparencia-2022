@@ -361,8 +361,8 @@ function animarAyuda() {
             return myChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
-
-                    labels: ['Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+                    /* labels: ['Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'], */
+                    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
                     datasets: [
                         {
                             label: 'Alquiler',
