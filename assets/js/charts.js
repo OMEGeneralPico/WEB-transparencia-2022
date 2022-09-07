@@ -1001,7 +1001,7 @@ function animarCreditosSector() {
                         {
                             tension: 0.1,
                             fill: false,
-                            data: [24, 7, 12],
+                            data: [56, 16, 28],
                             fill: true,
                             backgroundColor: ['rgba(71, 123, 168, 0.2)', 'rgba(105, 190, 190, 0.2)', 'rgba(215, 90, 218, 0.2)'
                             ],
@@ -1507,12 +1507,12 @@ function animaractcomercio() {
                 type: 'bar',
                 data: {
 
-                    labels: ['Bajas comerciales', 'Altas comerciales', 'Duplicados', 'Lib. Sanitarias nuevas', 'Renovaciones'],
+                    labels: ['Bajas comerciales', 'Altas comerciales', 'Lib. Sanitarias nuevas', 'Renovaciones'],
                     datasets: [
                         {
                             tension: 0.1,
                             fill: false,
-                            data: [243, 254, 76, 324, 327],
+                            data: [46, 29, 354, 1018],
                             fill: true,
                             backgroundColor: ['rgba(71, 123, 168, 0.2)', 'rgba(105, 190, 190, 0.2)', 'rgba(105, 170, 180, 0.2)', 'rgba(215, 90, 218, 0.2)',
 
@@ -1526,7 +1526,7 @@ function animaractcomercio() {
                             borderWidth: 1,
                             borderColor: [
 
-                                'rgba(71, 123, 168, 1)', 'rgba(105, 190, 190, 1)', 'rgba(215, 90, 218, 1)',
+                                'rgba(71, 123, 168, 1)', 'rgba(105, 190, 190, 1)', 'rgba(105, 170, 180, 1)', 'rgba(215, 90, 218, 1',
 
 
 
