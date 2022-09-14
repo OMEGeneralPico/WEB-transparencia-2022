@@ -1,54 +1,54 @@
 {
    "CONCEJO DELIBERANTE": {
-      "Bienes de capital": 1.53,
-      "Bienes de consumo": 1.06,
-      "Gasto en personal": 36.28,
+      "Bienes de capital": 1.86,
+      "Bienes de consumo": 8.06,
+      "Gasto en personal": 78.24,
       "Ser. no personales": 13.93,
       "Transf. sociales": 0.11
    },
    "INTENDENCIA": {
-      "Bienes de capital": 2.28,
-      "Bienes de consumo": 1.46,
-      "Gasto en personal": 35.56,
-      "Ser. no personales": 13.92
+      "Bienes de capital": 1.06,
+      "Bienes de consumo": 3.20,
+      "Gasto en personal": 67.10,
+      "Ser. no personales": 28.65
    },
    "GOBIERNO": {
-      "Bienes de capital": 1.36,
-      "Bienes de consumo": 0.99,
-      "Gasto en personal": 34.01,
-      "Ser. no personales": 6.74,
-      "Trabajos Publicos": 2.81,
-      "Transf. sociales": 3.23
+      "Bienes de capital": 0.44,
+      "Bienes de consumo": 2.58,
+      "Gasto en personal": 64.43,
+      "Ser. no personales": 15.71,
+      "Trabajos Publicos": 4.91,
+      "Transf. sociales": 11.94
    },
    "PLANIFICACION": {
-      "Bienes de capital": 1.32,
-      "Bienes de consumo": 0.75,
-      "Gasto en personal": 13,
-      "Ser. no personales": 2.84,
-      "Prestamos": 0.01,
-      "Trabajos públicos": 31.78
+      "Bienes de capital": 2.18,
+      "Bienes de consumo": 2.24,
+      "Gasto en personal": 29.79,
+      "Ser. no personales": 9.49,
+      "Prestamos": 0.03,
+      "Trabajos públicos": 56.28
    },
    "ESPACIOS PUBLICOS": {
-      "Bienes de capital": 1.23,
-      "Bienes de consumo": 4.85,
-      "Gasto en personal": 31.39,
-      "Ser. no personales": 13.88
+      "Bienes de capital": 1.25,
+      "Bienes de consumo": 12.04,
+      "Gasto en personal": 67.27,
+      "Ser. no personales": 119.44
    },
    "DESARROLLO SOCIAL": {
-      "Bienes de capital": 0.06,
-      "Bienes de consumo": 3.13,
-      "Gasto en personal": 28.86,
-      "Ser. no personales": 7.46,
-      "Transf. sociales": 20.97,
-      "Prestamos": 0.16
+      "Bienes de capital": 0.54,
+      "Bienes de consumo": 7.66,
+      "Gasto en personal": 51.06,
+      "Ser. no personales": 21.47,
+      "Transf. sociales": 19.02,
+      "Prestamos": 0.25
    },
    "ECONOMIA": {
-      "Bienes de capital": 0.11,
-      "Bienes de consumo": 2.27,
-      "Gasto en personal": 38.81,
-      "Ser. no personales": 3.14,
-      "Transf. sociales": 0.79,
-      "Prestamos": 3.58
+      "Bienes de capital": 1.13,
+      "Bienes de consumo": 3.48,
+      "Gasto en personal": 73.37,
+      "Ser. no personales": 9.21,
+      "Transf. sociales": 12.81,
+      "Prestamos": 0.00
    },
    "ORGANISMOS DESCENTRALIZADOS": {
       "Bienes de capital": 7.76,
