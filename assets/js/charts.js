@@ -173,40 +173,25 @@ function animarrecursossecre() {
                     responsive: true,
                     maintainAspectRatio: false,
                     scales: {
-                        x: {
-                            ticks: {
-                                font: { family: 'Raleway' }
-                            },
-                            stacked: true
-                        },
-                        y: {
-                            ticks: {
-                                font: { family: 'Raleway' },
-                                maxTicksLimit: 5,
-                            },
-                            stacked: true,
-                            font: {
-                                family: 'Titillium Web'
-                            },
-                        }
+                        y: { ticks: { font: { family: 'Raleway' } } },
+                        x: { ticks: { font: { family: 'Raleway' } } }
                     },
                     legend: {
-                        display: true,
-                        position: 'right',
-                        align: 'middle',
-                        labels: { font: { family: 'Raleway' } },
+                        display: false
                     },
                     plugins: {
-
                         title: {
                             display: true,
-                            text: 'Ingresos en 2021 (en millones $)',
-                            align: 'center',
+                            text: 'Ingresos en 2022 (en millones $ )',
+                            align: 'start',
                             font: {
                                 family: 'Titillium Web',
                                 size: 20,
                             },
-                        }
+                        },
+                        legend: {
+                            display: false
+                        },
                     }
                 }
             });
@@ -905,10 +890,10 @@ function animareconomiacreditos() {
                 type: 'bar',
                 data: {
 
-                    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Junio'],
+                    labels: ['Linea Municipal', '2870'],
                     datasets: [
                         {
-                            data: [1200000, 650000, 1570000, 5550000, 7554553],
+                            data: [2988770, 1600000],
                             borderColor: [
 
                                 'rgba(105, 190, 190, 1)',
@@ -993,23 +978,33 @@ function animarCreditosSector() {
             inViewCreditosSector = true;
             return new Chart(ctx, {
                 plugins: [ChartDataLabels],
-                type: 'doughnut',
+                type: 'bar',
                 data: {
 
-                    labels: ['Comercio', 'Produccion', 'Servicios'],
+                    labels: ['Mujeres','Hombres','2870', 'Linea Municipal','Comercio', 'Produccion', 'Servicios'],
                     datasets: [
                         {
                             tension: 0.1,
                             fill: false,
-                            data: [56, 16, 28],
+                            data: [24, 19, 40, 3, 24, 7, 12],
                             fill: true,
-                            backgroundColor: ['rgba(71, 123, 168, 0.2)', 'rgba(105, 190, 190, 0.2)', 'rgba(215, 90, 218, 0.2)'
-                            ],
                             borderColor: [
 
-                                'rgba(71, 123, 168, 1)', 'rgba(105, 190, 190, 1)', 'rgba(215, 90, 218, 1)'
+                                'rgba(105, 190, 190, 1)',
+                                'rgba(71, 123, 168, 1)',
+                                'rgba(215, 90, 218, 1)',
+                                'rgba(240, 150, 145, 1)',
+                                'rgba(35, 145, 200, 1)',
                             ],
+                            backgroundColor: [
 
+                                'rgba(105, 190, 190, 0.2)',
+                                'rgba(71, 123, 168, 0.2)',
+                                'rgba(215, 90, 218, 0.2)',
+                                'rgba(240, 150, 145, 0.2)',
+                                'rgba(35, 145, 200, 0.2)',
+
+                            ],
                             borderWidth: 1
                         }
                     ]
@@ -1017,52 +1012,27 @@ function animarCreditosSector() {
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    scale: {
-                        max: 3000000,
-                        stepSize: 1000000,
-                        r: {
-                            ticks: {
-
-
-                                font: { family: 'Raleway' }
-                            },
-
-                        }
+                    scales: {
+                        y: { ticks: { font: { family: 'Raleway' } } },
+                        x: { ticks: { font: { family: 'Raleway' } } }
                     },
-
+                    legend: {
+                        display: false
+                    },
                     plugins: {
-                        datalabels: {
-                            display: 'auto',
-                            formatter: function (value) {
-                                return value + '%';
-                            },
-                            color: 'white',
-                            font: {
-
-
-                                family: 'Raleway'
-                            }
-                        },
-
                         title: {
                             display: true,
-                            text: 'Monto total créditos por actividad (%)',
+                            text: 'Monto total créditos por Sector',
                             align: 'start',
                             font: {
                                 family: 'Titillium Web',
                                 size: 20,
-                            }
+                            },
                         },
                         legend: {
-                            display: true,
-                            position: 'right',
-                            align: 'middle',
-                            labels: { font: { family: 'Raleway' } }
-                        }
-
+                            display: false
+                        },
                     }
-
-
                 }
             });
         } else {
