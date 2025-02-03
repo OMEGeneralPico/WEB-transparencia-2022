@@ -81,7 +81,7 @@ const myChart2 = new Chart(ctx2, {
         labels: ['Primario','Secundario', 'Terciario', 'Universitario',],
         datasets: [{
             label: '# of Votes',
-            data: [54, 37,2,7],
+            data: [418, 358,34,124],
             backgroundColor: [
               'rgba(71, 123, 168, 0.2)',
               'rgba(105, 190, 190, 0.2)',
@@ -152,10 +152,10 @@ const ctx3 = document.getElementById('municipalidad_rango_etario').getContext('2
 const myChart3 = new Chart(ctx3, {
     type: 'doughnut',
     data: {
-        labels: ['menos de 36 años','36 a 55 años', 'más de 56 años',],
+        labels: ['menos de 30 años','30 a 55 años', 'más de 55 años',],
         datasets: [{
             label: '# of Votes',
-            data: [16,64,19],
+            data: [54,693,187],
             backgroundColor: [
               'rgba(71, 123, 168, 0.2)',
           'rgba(105, 190, 190, 0.2)',

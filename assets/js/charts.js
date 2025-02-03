@@ -237,7 +237,7 @@ function animarpersonalsecre() {
                         {
                             tension: 0.1,
                             fill: false,
-                            data: [38, 33, 172, 46, 275, 168, 93, 20],
+                            data: [52, 45, 202, 45, 256, 195, 114, 25],
                             fill: true,
                             backgroundColor: ['rgba(71, 123, 168, 0.2)',
                                 'rgba(105, 190, 190, 0.2)',

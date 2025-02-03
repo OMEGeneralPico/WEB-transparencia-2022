@@ -16,6 +16,7 @@
     padding: 10px;
     border-radius: 4px;
   }
+  
  .introImg{
    width: 500%;
  }
@@ -35,7 +36,7 @@
     color: #00A27F;
   }
   #tarjeta{    
-    width: 400px;
+    width: 30vw;
   }
   /* @media (max-width: 360px) {
     #tarjeta {
