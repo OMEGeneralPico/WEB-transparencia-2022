@@ -73,7 +73,8 @@ const myChart = new Chart(ctx, {
       }
     });
 
-
+  
+    
 const ctx2 = document.getElementById('municipalidad_nivel_educativo').getContext('2d');
 const myChart2 = new Chart(ctx2, {
     type: 'doughnut',
@@ -220,4 +221,84 @@ const myChart3 = new Chart(ctx3, {
           }
         }
       }
-    });
+    });  const seba = document.getElementById('graficodePresupuesto').getContext('2d');
+
+    const presupuestoTotal = new Chart(seba, {
+      type: 'bar', // Puedes cambiar el tipo de gráfico si lo deseas
+    data: {
+        labels: [
+            "Intendencia",
+            "Gobierno",
+            "Gestion Urbana",
+            "Ambiente",
+            "Des. Social",
+            "Economia"
+        ],
+        datasets: [
+        
+            {
+                label: 'Gasto Real',
+                data: [
+                    1346720057.17,
+                    5706822769.13,
+                    2691622515.74,
+                    8028998956.21,
+                    4019910156.57,
+                    2745799911.82
+                ],
+                backgroundColor: 'rgba(255, 99, 132, 1)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 1,
+                barPercentage: 0.8,
+                categoryPercentage: 1.0,
+                stack: 'presupuesto'
+            },    {
+              label: 'Presupuesto Total',
+              data: [
+                  1399271307.74,
+                  5893263284.98,
+                  2771489217.39,
+                  8783778816.92,
+                  4162189809.80,
+                  2861037049.18
+              ],
+              backgroundColor: 'rgba(54, 162, 235, 0.9)',
+              borderColor: 'rgba(54, 162, 235, 1)',
+              borderWidth: 1,
+              barPercentage: 0.8,
+              categoryPercentage: 1.0,
+              stack: 'presupuesto'
+          }
+        ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      indexAxis: 'y',
+      scales: {
+          y: {
+              beginAtZero: true,
+              stacked: false
+          },
+          x: {
+              stacked: false
+          }
+      },
+      layout: {
+          padding: {
+              top: 10,
+              bottom: 10
+          }
+      },
+      plugins: {
+          datalabels: {formatter: (val) => (`${val}%`)},
+          tooltip: {
+              callbacks: {
+                  label: function(tooltipItem) {
+                      return tooltipItem.dataset.label + ': $' + tooltipItem.raw.toLocaleString();
+                  }
+              }
+          }
+      }
+  }
+});

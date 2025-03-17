@@ -5,65 +5,65 @@
 
   },
   "INTEDENCIA": {
-    "Intendencia":	204716807.97,
-    "Faltas":	303704287.92,
-    "Asuntos Legales":	203832815.40,
-    "Comunicacion" : 219734207.79,
-    "Modern. Tecn":	315882891.15,
-    "Protocolo":	108064147.88,
-    "Gest. Adm. Art":	43336149.63
+    "Intendencia":	196099353.54,
+    "Faltas":	299862728.23,
+    "Asuntos Legales":	198344675.49,
+    "Comunicacion" : 199027683.97,
+    "Modern. Tecn": 306415632.70,
+    "Protocolo":	105719779.07,
+    "Gest. Adm. Art":	41250204.17
 
    
   },
   "GOBIERNO": {
-    "Gobierno":	421614205.61,
-    "Recursos Hum":	444475610.07,
-    "Prevenc. Ciud":	2222852648.34,
-    "Educ. y Cultura":	978048578.86,
-    "Rel.Institucional":	627798309.05,
-    "Juventud"	:211312850.45,
-    "Choferes":	378888309.28,
-    "Educacion":	173794248.22,
-    "Deportes":	434478525.10
+    "Gobierno":	419435238.70,
+    "Recursos Hum":	441250538.91,
+    "Prevenc. Ciud":	2160061435.48,
+    "Educ. y Cultura":	961435983.29,
+    "Rel.Institucional":	563471144.77,
+    "Juventud"	:207855523.10,
+    "Choferes":	376823691.25,
+    "Educacion":	166195743.82,
+    "Deportes":	410293469.81
 
    
   },
   "PLANIFICACION": {
-   "Diseño y planific.": 80064704.38,
-   "Infraestructura": 100906355,
-   "Obras particulares": 393653988.28,
-   "Planeam.y catastro": 69116556.78,
-   "Planif.y gestión urbana": 330044531.06,
-   "Obras Municipales" : 1710965273.40
+   "Diseño y planific.": 76455619.99,
+   "Serv Cons": 183495489.71,
+   "Obras particulares": 369337473.19,
+   "Planeam.y catastro": 64541858.41,
+   "Planif.y gestión urbana": 326472049.98,
+   "Obras Municipales" : 1671320024.46
    
    
   },
   "ESPACIOS PUBLICOS": {
-    "Secretaria": 1621745428.86,
-    "Des. Sustentab":	280537583.87,
-    "Serv. Publicos":	2837211783.59,
-    "Arbolado":	1077829392.00,
-    "Gestion Amb":	215270901.71,
-    "Zoonosis y vec"	:289689465.44,
-    "RRU":	637649000.00,
-    "Girsu":	1823845261.45
+    "Secretaria": 1519217217.31,
+    "Des. Sustentab":	277366601.86,
+    "Serv. Publicos":	2733077998.78,
+    "Arbolado":	986012874.59,
+    "Gestion Amb":	193325935.21,
+    "Zoonosis y vec": 267934037.23,
+    "RRU":	259637740.00,
+    "Girsu":	1792426551.23
   },
   "DESARROLLO SOCIAL": {
-    "Des Social":	1463556023.44,
-    "Familia":768487611.17,
-    "Des. Infantil":	682207537.13,
-    "Des Territorial":	790476390.78,
-    "Unid. Niñez"	:351080791.87,
-    "Polit. Genero"	:106381455.41
+    "Des Social":	1430897404.73,
+    "Familia": 745611310.16,
+    "Des. Infantil":	630363563.22,
+    "Des Territorial":	780807204.43,
+    "Unid. Niñez"	: 332544792.24,
+    "Polit. Genero"	:99685881.79
    
   },
   "ECONOMIA": {
-    "Economia":	191366036.56,
-    "Contaduria"	:450165916.55,
-    "Rentas":	590149780.73,
-    "Dir. Comercio":	594045808.36,
-    "Des. Econo":	704582203.92,
-    "Tesoreria"	:330727303.06
+    "Economia":	165662765.25,
+    "Contaduria"	:438672929.79,
+    "Rentas":	560500048.75,
+    "Dir. Comercio":	586167676.77,
+    "Des. Econo":	678868921.62,
+    "Tesoreria"	:315927569.64
    
   },
   "ORGANISMOS DESCENTRALIZADOS": {
