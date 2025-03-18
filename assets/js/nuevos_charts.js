@@ -232,7 +232,9 @@ const myChart3 = new Chart(ctx3, {
             "Gestion Urbana",
             "Ambiente",
             "Des. Social",
-            "Economia"
+            "Economia",
+            "No Programaticas",
+            "Organismos Descentralizados"
         ],
         datasets: [
         
@@ -244,10 +246,13 @@ const myChart3 = new Chart(ctx3, {
                     2691622515.74,
                     8028998956.21,
                     4019910156.57,
-                    2745799911.82
+                    2745799911.82,
+                    8183967241.93,
+                    881059915.03
+
                 ],
-                backgroundColor: 'rgba(255, 99, 132, 1)',
-                borderColor: 'rgba(255, 99, 132, 1)',
+                backgroundColor: 'rgba(105, 190, 190, 1)',
+                borderColor: 'rgb(138, 255, 99)',
                 borderWidth: 1,
                 barPercentage: 0.8,
                 categoryPercentage: 1.0,
@@ -260,10 +265,11 @@ const myChart3 = new Chart(ctx3, {
                   2771489217.39,
                   8783778816.92,
                   4162189809.80,
-                  2861037049.18
+                  2861037049.18,  8322630674.68,
+                  918060689.80
               ],
-              backgroundColor: 'rgba(54, 162, 235, 0.9)',
-              borderColor: 'rgba(54, 162, 235, 1)',
+              backgroundColor: 'rgba(235, 54, 54, 0.9)',
+              borderColor: 'rgb(235, 81, 54)',
               borderWidth: 1,
               barPercentage: 0.8,
               categoryPercentage: 1.0,
@@ -301,4 +307,92 @@ const myChart3 = new Chart(ctx3, {
           }
       }
   }
+});
+
+const tipodeGasto = document.getElementById('presupuestoTotalTipo').getContext('2d');
+
+const presupuestoTotalTipo = new Chart(tipodeGasto, {
+  type: 'bar', // Puedes cambiar el tipo de gráfico si lo deseas
+data: {
+    labels: [
+        "Personal",
+        "Bienes de Consumo",
+        "No Personales",
+        "Transf. Sociales",
+        "Bienes de Capital",
+        "Trabajo Publico",
+        "Prestamos",
+     
+    ],
+    datasets: [
+    
+        {
+            label: 'Gasto Real',
+            data: [
+              15270543818.85 ,
+              1732864914.47 ,
+              4532800568.53 ,
+              1830585842.62 ,
+              778770537.77 ,
+              1472498421.22 ,
+              61775639.59 
+              
+
+            ],
+            backgroundColor: 'rgba(105, 190, 190, 1)',
+            borderColor: 'rgb(138, 255, 99)',
+            borderWidth: 1,
+            barPercentage: 0.8,
+            categoryPercentage: 1.0,
+            stack: 'presupuesto'
+        },    {
+          label: 'Presupuesto Total',
+          data: [
+             15456767926.82,
+              2091645218.56 ,
+              5524960458.05 ,
+              1870879542.23 ,
+               804382592.15 ,
+               1545017469.26 ,   70589841.19 
+             
+          ],
+          backgroundColor: 'rgba(235, 54, 54, 0.9)',
+          borderColor: 'rgb(235, 81, 54)',
+          borderWidth: 1,
+          barPercentage: 0.8,
+          categoryPercentage: 1.0,
+          stack: 'presupuesto'
+      }
+    ]
+},
+options: {
+  responsive: true,
+  maintainAspectRatio: false,
+  indexAxis: 'y',
+  scales: {
+      y: {
+          beginAtZero: true,
+          stacked: false
+      },
+      x: {
+          stacked: false
+      }
+  },
+  layout: {
+      padding: {
+          top: 10,
+          bottom: 10
+      }
+  },
+  plugins: {
+      datalabels: {formatter: (val) => (`${val}%`)},
+      tooltip: {
+          callbacks: {
+              label: function(tooltipItem) {
+                  return tooltipItem.dataset.label + ': $' + tooltipItem.raw.toLocaleString();
+              }
+          }
+      }
+  }
+}
 });
