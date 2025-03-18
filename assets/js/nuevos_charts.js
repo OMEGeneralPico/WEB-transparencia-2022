@@ -339,8 +339,8 @@ data: {
               
 
             ],
-            backgroundColor: 'rgba(105, 190, 190, 1)',
-            borderColor: 'rgb(138, 255, 99)',
+            backgroundColor: 'rgb(255, 0, 0)',
+            borderColor: 'rgb(105, 5, 5)',
             borderWidth: 1,
             barPercentage: 0.8,
             categoryPercentage: 1.0,
@@ -356,8 +356,8 @@ data: {
                1545017469.26 ,   70589841.19 
              
           ],
-          backgroundColor: 'rgba(235, 54, 54, 0.9)',
-          borderColor: 'rgb(235, 81, 54)',
+          backgroundColor: 'rgba(46, 162, 240, 0.9)',
+          borderColor: 'rgb(35, 132, 173)',
           borderWidth: 1,
           barPercentage: 0.8,
           categoryPercentage: 1.0,
